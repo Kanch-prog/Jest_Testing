@@ -1,0 +1,187 @@
+{
+	"id": "d3acd0e9-3c28-43f8-be38-ac83e03683d4",
+	"name": "User API Tests",
+	"timestamp": "2024-08-29T00:59:03.835Z",
+	"collection_id": "29656285-01182813-4d92-4e3e-a915-2e2856376955",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 7,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-29T00:59:02.968Z",
+	"totalFail": 11,
+	"results": [
+		{
+			"id": "bfc2b8d6-231a-479a-bee3-6baf19148784",
+			"name": "Register User Request",
+			"url": "http://localhost:3000/register",
+			"time": 57,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Response has an id": false,
+				"Status code is 200": false,
+				"Login successful": false,
+				"User found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has an id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Login successful": {
+					"pass": 0,
+					"fail": 1
+				},
+				"User found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"Response has an id": false,
+					"Status code is 200": false,
+					"Login successful": false,
+					"User found": false
+				}
+			]
+		},
+		{
+			"id": "c71a1eb4-1608-43de-97c5-059b79f825e8",
+			"name": "Login User Request",
+			"url": "http://localhost:3000/login",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Response has an id": false,
+				"Status code is 200": true,
+				"Login successful": true,
+				"User found": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has an id": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Login successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"Response has an id": false,
+					"Status code is 200": true,
+					"Login successful": true,
+					"User found": false
+				}
+			]
+		},
+		{
+			"id": "24769b40-7cdb-44fc-806b-ff11a8804347",
+			"name": "Get User Details Request",
+			"url": "http://localhost:3000/users/1",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 201": false,
+				"Response has an id": true,
+				"Status code is 200": true,
+				"Login successful": false,
+				"User found": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has an id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Login successful": {
+					"pass": 0,
+					"fail": 1
+				},
+				"User found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 201": false,
+					"Response has an id": true,
+					"Status code is 200": true,
+					"Login successful": false,
+					"User found": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 70,
+	"collection": {
+		"requests": [
+			{
+				"id": "bfc2b8d6-231a-479a-bee3-6baf19148784",
+				"method": "POST"
+			},
+			{
+				"id": "c71a1eb4-1608-43de-97c5-059b79f825e8",
+				"method": "POST"
+			},
+			{
+				"id": "24769b40-7cdb-44fc-806b-ff11a8804347",
+				"method": "GET"
+			}
+		]
+	}
+}

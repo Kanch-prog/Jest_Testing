@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "./test-reports",
+          "outputName": "jest-junit.xml"
+        }
+      ]
+    ]
+  }
+}

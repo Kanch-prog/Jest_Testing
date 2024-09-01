@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="1.073">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2024-08-25T05:07:50" time="0.897" tests="3">
+    <testcase classname=" adds 1 + 2 to equal 3" name=" adds 1 + 2 to equal 3" time="0.003">
+    </testcase>
+    <testcase classname=" adds -1 + 1 to equal 0" name=" adds -1 + 1 to equal 0" time="0.001">
+    </testcase>
+    <testcase classname=" adds 0 + 0 to equal 0" name=" adds 0 + 0 to equal 0" time="0">
+    </testcase>
+  </testsuite>
+</testsuites>

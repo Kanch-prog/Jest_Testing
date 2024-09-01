@@ -1,0 +1,3 @@
+registers a new user: {"username":"john_doe","password":"password123"}
+logs in a user: Login successful
+changes the user password: Password changed successfully
